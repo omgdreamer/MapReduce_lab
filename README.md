@@ -22,7 +22,7 @@ for line in sys.stdin:
     line = line.strip()
     words = line.split()
     for word in words:
-        print "%s\t%s" % (word, 1)
+        print ("%s\t%s" % (word, 1))
 ```
 
 - Map 脚本不会计算单词的总数，而是直接输出 `<word> 1`，主要是把单词切开。
